@@ -1,0 +1,38 @@
+@media (max-width: 600px){
+  /* body{
+    background-color: yellow;
+  } */
+  .products {
+    display: inherit;
+    height: auto;
+  }
+  .product {
+    margin-top: auto;
+  }
+  .main_section {
+    padding: 4%;
+  }
+  .comtenedor-seccionbajo{
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    padding: 10px auto;
+  }
+  .seccionbajo{
+    padding: 10px auto;
+  }
+  .sub-contebajo{
+    padding: 20px auto;
+    width: auto;
+  }
+  .container_gente {
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 10%;
+  }
+  .gensub-contebajo{
+    width: auto;
+    
+  }
+}

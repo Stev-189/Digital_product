@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <!-- este link tan largo corresponde a bootsdtrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  
+
+  <title>Brand</title>
+</head>
+<body>
+  <!-- aqui empiesa el navbar -->
+
+  <nav class="fadeInDown">
+   <!--  se garego la lcase que permite la animacion de arriba ha abajo -->
+    <div class="brand_image">
+      <img src="src/logo.png" alt="">
+    </div>
+    <div class="nav_options"></div>
+    <ul>
+      <li><a href="#">Faqs</a></li>
+      <li><a href="#">Procductos y detalles</a></li>
+    </ul>
+  </nav>
+  <!-- aqui acaba el navbar -->
+
+  <!-- comimenso de Main Section -->
+  <div class="main_section fadeIn">
+<!-- ha esta clase se agrego una animacion con la clase fadeIn -->
+
+    <h1>
+      Este es un producto increible, no se que haces viendo que lo puiedes tener
+    </h1>
+  </div>
+  <!-- fin de Main Section -->
+  <div class="products">
+    <!-- primer producto -->
+      <div class="product fadeInUp">
+        <div class="content">
+          <div class="img_content">
+            <img src="src/box1.png" alt="">
+          </div>
+          <h1>Producto 1</h1>
+          <p>Miles de productos que puedes comprar maldito bastardo</p>
+          <a href="venta.html">
+            <!-- para que funcione los bytton sin formularios deebemos ingresarlkos dentro de un link -->
+            <button  class="main_button">Lo quiero</button>
+            </a>
+        </div>
+      </div>
+
+     <!-- segundo producto -->
+     <div class="product fadeInUp">
+      <div class="content">
+        <div class="img_content">
+          <img src="src/box2.png" alt="">
+        </div>
+        <h1>Producto 2</h1>
+        <p>Miles de productos que puedes comprar maldito bastardo</p>
+
+        <a href="venta.html">
+        <!-- para que funcione los bytton sin formularios deebemos ingresarlkos dentro de un link -->
+        <button  class="main_button">Lo quiero</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- fin productos -->
+  <div class="textformulario">
+    <form action=”#”>
+      <label for=”nombre”>Nombre:</label>
+      <input type=”text” id=”nombre” name=”user_name” />
+    
+      <label for=“edad“>Edad:</label>
+      <input type=”number” id=”edad” name=”user_age” />
+    
+      <button type=”submit”>Enviar mis datos</button>
+    </form>
+  </div>
+
+
+  <div class="seccionbajo">
+    <div class="comtenedor-seccionbajo">
+
+      <div class="sub-contebajo">
+        <div class="img-scb">
+          <img src="src/box1.png" alt="">
+        </div>
+        <h3>Los mas suavecitos</h3>
+        <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+      </div>
+
+      <div class="sub-contebajo">
+        <div class="img-scb">
+          <img src="src/box1.png" alt="">
+        </div>
+        <h3>Los mas suavecitos</h3>
+        <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+      </div>
+
+      <div class="sub-contebajo">
+        <div class="img-scb">
+          <img src="src/box1.png" alt="">
+        </div>
+        <h3>Los mas suavecitos</h3>
+        <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="gente_face">
+    <h1>Menciones</h1>
+    <div class="container_gente">
+   
+    <div class="gensub-contebajo">
+      <div class="genimg-scb">
+        <img src="" alt="">
+      </div>
+      <h3>Los mas suavecitos</h3>
+      <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+    </div>
+
+    <div class="gensub-contebajo">
+      <div class="genimg-scb">
+        <img src="" alt="">
+      </div>
+      <h3>Los mas suavecitos</h3>
+      <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+    </div>
+
+    <div class="gensub-contebajo">
+      <div class="genimg-scb">
+        <img src="" alt="">
+      </div>
+      <h3>Los mas suavecitos</h3>
+      <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+    </div>
+
+    <div class="gensub-contebajo">
+      <div class="genimg-scb">
+        <img src="" alt="">
+      </div>
+      <h3>Los mas suavecitos</h3>
+      <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+    </div>
+
+  </div>
+  </div>
+  <footer>
+    <p>Términos y condiciones</p>
+    <!-- para que correo funcione de forma automatica podemos agregar al href mailto: -->
+    <p class="contact"><a href="mailto:contacto@mail.com">contacto@mail.com</a></p>
+    
+  </footer>
+  <!--solo se puede llmar a los script al final del body-->
+  <script src="scripts/script.js"></script>
+</body>
+</html>

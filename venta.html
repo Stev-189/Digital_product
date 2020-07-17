@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <!-- este link tan largo corresponde a bootsdtrap -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  
+
+  <title>Brand</title>
+</head>
+<body>
+  <!-- aqui empiesa el navbar -->
+
+  <nav class="fadeInDown">
+   <!--  se garego la lcase que permite la animacion de arriba ha abajo -->
+    <div class="brand_image">
+      <img src="src/logo.png" alt="">
+    </div>
+    <div class="nav_options"></div>
+    <ul>
+      <li><a href="#">Faqs</a></li>
+      <li><a href="#">Procductos y detalles</a></li>
+    </ul>
+  </nav>
+  <!-- aqui acaba el navbar -->
+<br>
+<br>
+<br>
+<br>
+<br>
+  <!-- aqui empiesa venta -->
+<div class="container">
+  <div class="rows">
+    <div class="col-4">
+      <div class="modulo_pago">
+        <div class="modulo_pago_img">
+        <img src="src/box2.png" alt="">
+        </div>
+        <h3>
+          Producto 1
+        </h3>
+        <p>
+          miles de productos que pouede elejir
+        </p>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="modulo_pago">
+
+       <!--  conla propuedad action al formulario se definira l acion a seguir una vez completado -->
+      
+       <!-- https://platzi.com/clases/1492-html-css/17000-configuracion-boton-de-pago-con-paypal/
+         la url de paypal la sacamos del sistema de transacion de paypal para que se entienda con pay pal hay que agrrgar metodo post -->
+        <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FLXQFCZ7U22MQ" method="POST">
+ <!--          para ocupar una imput devemos asignarle un variable a la cual llenara como se aprecia en est caso la bariable se la 
+          dimos a name  -->
+          <label for="name">Nombre</label>
+          <!-- con ese br colocolo el label sobre el imput -->
+          <br>
+          <input type="text" placeholder="" name="name" class="data">
+          <br>
+          <label for="email">E-mail</label>
+          <!-- con ese br colocolo el label sobre el imput -->
+          <br>
+          <input type="text" placeholder="" name="email" class="data">
+          <br>
+          <label for="phone">Telefono</label>
+          <!-- con ese br colocolo el label sobre el imput -->
+          <br>
+          
+          <input type="text" placeholder="" name="phone" class="data" >
+         <!--  le name del atribuy¡to elige o tine pre dispuesto el formato de netrada historico -->
+          <br>
+
+         <!--  ejemplo envio datos paypal -->
+<!--           <input type="hidden" name="cmd" value="_cart">
+          <input type="hidden" name="business" value="seller@designerfotos.com">
+          <input type="hidden" name="item_name" value="hat">
+          <input type="hidden" name="item_number" value="123">
+          <input type="hidden" name="amount" value="15.00">
+          <input type="hidden" name="first_name" value="John">
+          <input type="hidden" name="last_name" value="Doe">
+          <input type="hidden" name="address1" value="9 Elm Street">
+          <input type="hidden" name="address2" value="Apt 5">
+          <input type="hidden" name="city" value="Berwyn">
+          <input type="hidden" name="state" value="PA">
+          <input type="hidden" name="zip" value="19312">
+          <input type="hidden" name="night_phone_a" value="610">
+          <input type="hidden" name="night_phone_b" value="555">
+          <input type="hidden" name="night_phone_c" value="1234"> -->
+          <!-- <input type="hidden" name="email" value="jdoe@zyzzyu.com"> -->
+
+         <!--  existen 3 formas de hacer un botos 
+          <a href=""></a>
+          <button></button>
+          <input type="submit"> -->
+          <!-- solamente con atributo value se puede cambiar el texto de un boton -->
+          <input type="submit" class="main_button" name="submit" value="Confirmar pago">
+
+          <!-- al precion el boton el submit envia datos al action del formulario -->
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <!-- empieza veneficio -->
+ <!-- inicia footer -->
+  <footer>
+    <p>Términos y condiciones</p>
+    <p>contacto@mail.com</p>
+  </footer>
+  <!--solo se puede llmar a los script al final del body-->
+  <script src="scripts/script.js"></script>
+</body>
+</html>

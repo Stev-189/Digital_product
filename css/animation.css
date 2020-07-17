@@ -1,0 +1,77 @@
+.fadeIn{
+  /* tiempo que dura la animacion en estecaso 4 segundos */
+  -webkit-animation-duration: 4s;
+  /*para que las animaciones funcionen se deben agregar a todos las reglas la palabra -webkit- como antes
+  esto es para que funcionenn en todos los navegadores*/
+  animation-duration: 4s;
+  /*esto espra que la animacion se la misma de ida y de vuelta*/
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  /*el nombre a la animacion*/
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  /*para realisar animacion se deben tener 2 cosas
+  1 la clases que tenemos actualemntey los keyframes*/
+}
+
+/*para la generacion de la keyframe d el aanimacion se debe sitar  ala clase*/
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/*en el codigo anterior es un traspaso de 4 segundos de cmabio de opacidad de 0 a 1*/
+
+.fadeInDown{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+ 
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown{
+  from {
+    opacity: 0;
+    /*con esta propiedad hace que baya el secion de arriba hasta abajo*/
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+.fadeInUp{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+ 
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+  from {
+    opacity: 0;
+    /*con esta propiedad hace que baya el secion de abajo hacia arriba*/
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
